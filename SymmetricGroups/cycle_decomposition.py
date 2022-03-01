@@ -56,8 +56,8 @@ def cycle_it(perm):
 if __name__ == "__main__":
     print("This is the permutations before it's decomposed\n")
     perm = [[1, 2, 3, 4, 5], [3,4,5,2,1]]
-    for row in perm:
-        print('(', *perm[0], ')')
+    for row in range(len(perm)):
+        print('(', *perm[row], ')')
     print('\n')
     cycles = cycle_it([[1, 2, 3, 4, 5], [3,4,5,2,1]])
     print("This is the permutations before written as a product of disjoint cycles\n")
